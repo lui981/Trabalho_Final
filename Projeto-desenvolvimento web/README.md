@@ -5,5 +5,5 @@ sistemas de notas utilizados para criação de notas
 Foi usada a linguagem javascript e o framework bootstrap.
 
 Criado por 
-Luis Gonzaga 
-Domingas Nunes
+Luis Gonzaga e  Domingas Nunes
+
