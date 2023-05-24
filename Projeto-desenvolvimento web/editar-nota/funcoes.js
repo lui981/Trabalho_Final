@@ -1,17 +1,19 @@
-/****************************************************
-  CÓDIGO PARA EDIÇÃO DE NOTAS A SER DESENVOLVIDO...
-*****************************************************/
 
 // Função para editar notas
 let listaNotas = document.querySelector('.lista-notas')
 notas = []
-
+// Chama a função listarNotas para exibir as notas na página
 listarNotas()
-
+// Função para listar as notas na página
 function listarNotas(){
+	 // Obtém as notas armazenadas no localStorage e converte para um array de objetos
 	notas = JSON.parse(localStorage.notas)
+	  // Limpa o conteúdo da lista de notas
 	listaNotas.innerHTML = ''
+
+	// Percorre o array de notas e cria os elementos HTML para exibi-las na página
 	for (let i = 0; i < notas.length; i++) {
+		// Cria o HTML para exibir cada nota na lista
 		listaNotas.innerHTML += `
 		<li id="${i}" class="list-group-item">
 		  <h5 class="font-weight-bold">
